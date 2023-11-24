@@ -1,0 +1,11 @@
+function sortDescending(arr)
+ {
+    return arr.sort((a, b) => b - a);
+}
+
+// Taking input from the user
+let inputArray = prompt("Enter numbers separated by commas:");
+let numbersArray = inputArray.split(',').map(Number);
+
+let sortedArray = sortDescending(numbersArray);
+console.log("Sorted array in descending order:", sortedArray);
